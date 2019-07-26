@@ -125,7 +125,7 @@ static int start_feed(struct dvb_demux_feed *dvbdmxfeed)
 
 	if (!adapter->feeds)
 		sg_dma_enable(adapter);
-	printk(KERN_INFO"__start_feed__\n"); 
+	//printk(KERN_INFO"__start_feed__\n"); 
 	return ++adapter->feeds;
 }
 
