@@ -77,13 +77,13 @@ static void xiic_reinit(struct hm610_i2c *i2c)
 
 	xiic_irq_clr_en(i2c, HM610_INTR_ARB_LOST_MASK);
 	
-	pci_write(STAVIX_I2C_BASE, 0x128, 0x314);
+	pci_write(HM610_I2C_BASE, 0x128, 0x314);
 	
-	pci_write(STAVIX_I2C_BASE, 0x12C, 0x314);
+	pci_write(HM610_I2C_BASE, 0x12C, 0x314);
 	
-	pci_write(STAVIX_I2C_BASE, 0x130, 0x314);
+	pci_write(HM610_I2C_BASE, 0x130, 0x314);
 	
-	pci_write(STAVIX_I2C_BASE, 0x144, 0xD);
+	pci_write(HM610_I2C_BASE, 0x144, 0xD);
 }
 
 static void xiic_deinit(struct hm610_i2c *i2c)
